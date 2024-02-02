@@ -1,0 +1,31 @@
+FROM ubuntu:20.04
+LABEL maintainer="joseph.parker@ichec.ie"
+LABEL version="1.0.0"
+LABEL description="Dockerfile file for running HARMONIE"
+
+# Disable Prompt During Packages Installation
+ARG DEBIAN_FRONTEND=noninteractive
+
+RUN apt update \ 
+	&& apt install -y \
+	gfortran \
+	g++ \
+	make \
+	wget \
+	git \
+	vim \
+	cmake \
+	rsync \
+	curl
+
+# Harmonie 43h22 dependencies
+RUN apt install -y ksh
+
+RUN apt install -y liblapack-dev libblas-dev
+RUN apt install -y libopenmpi-dev
+
+RUN apt install -y libnetcdf-dev libnetcdff-dev
+
+RUN apt install -y flex libbison-dev
+
+RUN apt install -y flex libhdf5-dev libhdf5-mpi-dev
