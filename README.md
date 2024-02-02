@@ -41,7 +41,7 @@ Download and install the ECCODES dependency:
 
 ```
 cd harmonie-43h22_bf
-./get_ecodes.sh
+./get_eccodes.sh
 ```
 
 This installs ECCODES in `harmonie-43h22_bf/eccodes`.
@@ -51,6 +51,7 @@ This installs ECCODES in `harmonie-43h22_bf/eccodes`.
 Install HARMONIE with
 
 ```
+cd /root/work/harmonie/harmonie-43h22_bf
 source set_env_variables.sh
 ./build.sh
 ```
