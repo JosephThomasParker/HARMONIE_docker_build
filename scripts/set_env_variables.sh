@@ -15,6 +15,7 @@ export NETCDF_LIB="-L/usr/lib/aarch64-linux-gnu/ -lnetcdf -lnetcdff"
 export NETCDF_INCLUDE="-I/usr/include"
 export HDF5_LIB="-L/usr/lib/aarch64-linux-gnu/ -lhdf5_serial_fortran -lhdf5_serial"
 export HDF5_INCLUDE="-I/usr/include/hdf5/serial/"
+export MPIDIR="/usr/lib/aarch64-linux-gnu/openmpi"
 
 echo "Environment variables set successfully!"
 
