@@ -13,7 +13,7 @@ Put the Harmonie tarball inside this repo. These instructions have been tested w
 Make the docker container:
 
 ```
-cd docker_environment
+cd docker
 docker build -f Dockerfile.ubuntu_20.04 -t harmonie_ubuntu_20.04 .
 ```
 
